@@ -74,11 +74,18 @@ position: relative;
 }
 .box1 h1{
 	font-size: 4em;
-	color: #fff;
 	margin-top: 1em;
 	line-height: 1.2;
 	font-weight: 600;
 }
+.gradient-text {
+	background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fff;
+ }
+
+
 .box1 h2{
 	color: #fff;
 	font-weight: 100;
@@ -110,13 +117,8 @@ position: relative;
 	width: 150px;
 	height: 150px;
 	border-radius: 10%;
-	opacity: .7;
 	margin-bottom: .4em;
 }
-.box1-2 img:hover{
-	opacity: 1;
-}
-
 .box-2{
 	width: 30%;
 	text-align: left;
@@ -124,7 +126,6 @@ position: relative;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding-bottom: 2em;
-	/* position: relative; */
 }
 .tel{
 	position: absolute;
@@ -135,18 +136,14 @@ position: relative;
 	color: #fff;
 	font-size: 2.2em;
 }
-
 .box-2 h2{
 	color: #fff;
 	font-size: 1.8em;
 	margin-bottom: .5em;
 	font-weight: 200;
 }
-/* .box1-h2{
-	font-weight: 700;
-} */
 .box-list {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #4facfe;
 	margin-top: 3em;
 }
 .box-list div{
@@ -154,10 +151,16 @@ position: relative;
 	margin-bottom: .3em;
 }
 .box1 span{
+	background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	color: #fff;
 	margin-top: .5em;
 }
 .box-list ul li{
+	/* background:  linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
 	color: #fff;
 	font-size: 1.2em;
 	margin-bottom: .5em;
@@ -166,25 +169,28 @@ position: relative;
 
 
 .btn-send{
-	border: 1px solid #fff;
+	border: 1px solid #4facfe;
 	padding: 10px 20px;
 	cursor: pointer;
 	outline: none;
 	text-transform: uppercase;
-	background: rgba(0, 0, 0, 0.177);
-	color: #fff;
+	background: rgba(0, 0, 0, 0.1);
 	font-weight: 600;
 	font-size: 18px;
 	border-radius: 2px;
 	margin-top: 2em;
 	border-radius: 5px;
 }
-.btn-send:hover{
-border: 1px solid green;
-background: green;
+.btn-send p{
+	background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fff;
 }
-
-
+.btn-send:hover{
+border: 1px solid rgb(10, 221, 10);
+background: rgba(14, 214, 14, 0.4);
+}
 
 .modal{
 	width: 100%;
@@ -206,7 +212,7 @@ background: green;
 .modal-box{
 	width: 50vw;
 height: auto;
-background: #12c2e9;
+background: linear-gradient( to right, #4facfe 0%, #00f2fe 100%);
 border-radius: 10px;
 position: relative;
 padding: 20px 20px 20px 20px;
@@ -219,7 +225,7 @@ padding: 20px 20px 20px 20px;
 	cursor: pointer;
 }
 .modal-btn{
-	background: rgb(238, 255, 0);
+	background: rgba(255, 255, 255, 0.429);
 	padding: 5px 0px 5px 0px;
 	text-transform: uppercase;
 	font-size: 1em;
@@ -292,7 +298,7 @@ padding: 20px 20px 20px 20px;
 	}
 	.box-list ul li {
 		font-size: 1em;
-		font-weight: 400;
+		/* font-weight: 400; */
   }
   .box1 span {
 	font-size: 1em;
@@ -320,9 +326,9 @@ padding: 20px 20px 20px 20px;
   }
 }
 @media screen and (max-width: 575px){
-	/* .box1-2{
-		display: none;
-	} */
+	.modal-box{
+		width: 80vw;
+	}
 	.box1{
 		width: 100%;
 	}
@@ -354,6 +360,10 @@ padding: 20px 20px 20px 20px;
 }
 .box-list ul li {
 	font-size: .9em;
+}
+.box1 .box1-h2 {
+	font-weight: 100;
+	font-size: 1.1em;
 }
 }
 @media screen and (max-width: 414px){

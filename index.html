@@ -31,9 +31,9 @@
 					</div>
 					<div class="formBx">
 						<form id="form_id">
-							<h3>Отправить заявку</h3>
+							<h3>Напишите нам и мы перезвоним с ответом</h3>
 							<input type="text" id="input_text" name="name" placeholder="Имя">
-							<input type="date" class="start" name="date" min="2022-11-06" max="2023-12-31" id="input_date">
+							
 							<input type="tel" name="phone" id="input_tel" placeholder="Телефон *" required>
 							<textarea name="message" id="input_message" placeholder="Ваше сообщение"></textarea>
 							<button class="modal-btn" type="submit">Отправить</button>
@@ -43,10 +43,10 @@
 			</div>
 			<main>
 				<div class="box1">
-					<h1>Электрическое <span>отопление</span> жилых домов в Минске и Минской облаcти.</h1>
+					<h1 class="gradient-text">Электрическое отопление жилых домов в Минске и Минской облаcти</h1>
 					<h2>Рассрочка | Скидка на оборудование 30%</h2>
 					<div class="box-btn">
-						<button onclick="openModal();" class="btn-send">Закать услугу</button>
+						<button onclick="openModal();" class="btn-send"><p>Задать вопрос</p></button>
 					</div>
 					
 					<div class="box-list">
@@ -94,7 +94,7 @@
 						</div>
 						
 					</div>
-					<span>Опыт более 5 лет | Выполнено более 30 работ | Соблюдение сроков | Связи</span>
+					<span>Опыт более 5 лет | Выполнено более 30 работ | Соблюдение сроков | Связи | Приятные цены</span>
 				</div>
 
 
@@ -146,7 +146,6 @@
 			let messageForm = `<b>Заказ с сайта Отопление</b>\n`
 			messageForm += `<b> </b>\n`
 			messageForm += `<b>Сообщение: </b> <i>«${this.message.value}»</i>\n`
-			messageForm += `<b>На дату: ${this.date.value} </b>\n`
 			messageForm += `<b> </b>\n`
 			messageForm += `<b>Отправитель: ${this.name.value}</b> \n`
 			messageForm += `<b>Телефон:${this.phone.value} </b> \n`
